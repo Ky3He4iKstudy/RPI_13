@@ -26,6 +26,14 @@
                 <action android:name="android.intent.action.TIME_TICK" />
             </intent-filter>
         </receiver>
+        <receiver
+            android:name=".BatteryReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
